@@ -10,8 +10,15 @@ Run sample script to minimise, followed by heating to 1000K for a random time-in
 
 Examine the final geometry 03_Prod.rst7, and check how many host atoms are within an eight Angstrom radius of the guest molecule with nat_within_8A.sh (needs select.tcl). Prefer the guest molecule to be fully surrounded by host molecules, i.e. not near the edge of the box. The reason for this is that later quantum chemistry calculations will not take into account periodic boundary conditions. Run sample script again if guest is away from the centre of the box. 
 
-To simulate the charge transfer state in the guest molecule, a new parameter file is created (ct.prmtop) using new charges obtained from a 'Constrained' DFT calculation. Run replace_amber-charges.sh to create ct.prmtop. 
+To simulate the charge transfer state in the guest molecule, a new parameter file is created (ct.prmtop) using new charges obtained from a 'Constrained' DFT calculation (files are in qchem folder). Run replace_amber-charges.sh to create ct.prmtop. 
 
-Then run the run_ct script to propagate the molecular dynamics for 100 ns using the new ct.prmtop file. The starting geometry is defined by 03_Prod.rst7.
+Then run the run_ct script to propagate the molecular dynamics for 100 ns (5 days with 32 threads...) using the new ct.prmtop file. The starting geometry is defined by 03_Prod.rst7.
 
-Once completed, quantum chemical snapshots are taken every N time-intervals to properly examine the charge transfer states as a function of time. 
+Once completed, quantum chemical (TDDFT) snapshots should be taken every N time-intervals to properly examine the charge transfer states as a function of time.
+
+## Dependencies
+
+python 2.7, and MDAnalysis python libraries
+Amber14 Molecular Dynamics package
+QChem Quantum Chemistry package, version 4.3
+
