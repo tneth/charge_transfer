@@ -1,1 +1,1 @@
-mpirun -n 32 /software/amber14/bin/sander.MPI -O -i 05_ct.in -p ct.prmtop -c 04_Prod.rst7 -o 05_ct.out -x 05_ct.mdcrd -r 05_ct.rst7 -inf 05_ct.mdinfo
+mpirun -n 32 /software/amber14/bin/sander.MPI -O -i 04_ct.in -p ../ct.prmtop -c 03_Prod.rst7 -o 04_ct.out -x 04_ct.mdcrd -r 04_ct.rst7 -inf 04_ct.mdinfo

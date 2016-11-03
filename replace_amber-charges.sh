@@ -14,4 +14,4 @@ while read p; do
 echo ${A[$i]}				# print new amber charges to screen (for debugging)
 sed -i -e "s/${A[$i]}/$p/g" ct.prmtop	# replace old charges with new amber charges in ct.prmtop
 i=$(echo $i+1 | bc) 			# bash count by +1
-done < ../qchem/amber.charges		# while loop reads new charges from this file
+done < qchem/amber.charges		# while loop reads new charges from this file

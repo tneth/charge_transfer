@@ -10,6 +10,6 @@ host = loadmol2 host.mol2
 list
 check guest
 
-solvatebox guest host 30.00
-saveamberparm guest file.prmtop file.inpcrd
+solvatebox guest host 29.00
+saveamberparm guest file.prmtop file.rst7
 quit
