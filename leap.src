@@ -4,8 +4,8 @@ param2 = loadamberparams parm10.dat
 param3 = loadamberparams gaff.dat
 param4 = loadamberparams frcmod.mecn
 
-guest = loadmol2 2KDA.mol2
-host = loadmol2 DPEPO.mol2
+guest = loadmol2 guest.mol2
+host = loadmol2 host.mol2
 
 list
 check guest
