@@ -1,0 +1,15 @@
+source leaprc.ff14ipq
+source leaprc.gaff
+param2 = loadamberparams parm10.dat
+param3 = loadamberparams gaff.dat
+param4 = loadamberparams frcmod.mecn
+
+guest = loadmol2 2KDA.mol2
+host = loadmol2 DPEPO.mol2
+
+list
+check guest
+
+solvatebox guest host 30.00
+saveamberparm guest file.prmtop file.inpcrd
+quit

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+RANGE=10000			# range of random number
+number=$RANDOM			
+let "number %= $RANGE"		# modulo operator
+#echo $number
+num1=5000			# minimum number
+num2=$(($num1 + $number))	# final number of timesteps
+#echo $num2
+
+cp 02_Heat.tmp 02_Heat.in
+sed -i "s/VALUE/$num2/g" 02_Heat.in
+
+./run_min
+./run_heat
+./run_prod
+#./run_prod2
+

@@ -1,0 +1,13 @@
+PARM94 for DNA, RNA and prot. modified for amidates. Use 1-4 scee 1.2. 14.June,96
+MASS
+
+BOND
+
+ANGLE
+ca-sh-ca    60.63      99.2
+
+DIHEDRAL
+ 
+NONB      RE
+
+END

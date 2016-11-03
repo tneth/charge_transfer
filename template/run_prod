@@ -1,0 +1,1 @@
+mpirun -n 4 /software/amber14/bin/sander.MPI -O -i 03_Prod.in -p file.prmtop -c 02_Heat.rst7 -o 03_Prod.out -x 03_Prod.mdcrd -r 03_Prod.rst7 -inf 03_Prod.mdinfo

@@ -1,0 +1,9 @@
+#! octave-interpreter-name -qf
+# a sample Octave program
+
+charges = dlmread('new.charges');
+total = 18.2223*charges;    # amber charges
+
+fid = fopen('amber.charges','w')
+A = fprintf (fid,"%5.8e\n", total);
+
