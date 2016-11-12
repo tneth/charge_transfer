@@ -23,7 +23,7 @@ Examine the final geometry 03_Prod.rst7, and check how many host atoms are withi
 
 The guest molecule must be fully surrounded by host molecules, i.e. not near the edge of the box. The reason for this is that later quantum chemistry calculations will not take into account the periodic boundary conditions. Run sample script again if the guest is too near the edge of the box. 
 
-To simulate the charge transfer state in the guest molecule, a new parameter file is created (ct.prmtop) using new charges obtained from a 'Constrained' DFT calculation (files are in qchem folder). Go into the main directory and run 'replace_amber-charges.sh' to create ct.prmtop, 
+To simulate the charge transfer state in the guest molecule, a new parameter file is created (ct.prmtop) using new charges obtained from a 'Constrained' DFT calculation (files are in qchem folder). Go into the main directory and run 'replace_amber-charges.sh' to create ct.prmtop (this has already been done so you can skip this step),  
 
 	./replace_amber-charges.sh
 
