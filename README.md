@@ -77,7 +77,7 @@ The MDAnalysis python library is used to extract snapshots of the guest and surr
 	mv tda.com frame$i.com
 	done
 
-In general, a snapshot should be taken every 1-2 ns for the whole trajectory. I recommend outputting mdcrd files with frames that are 1 ns apart, then if desired skip every second frame, e.g. for i in {1..10..2}. Finally, simply run each frame.com file; for example (should paste the following into a bash script and "nohup ./script &"),
+In general, a snapshot should be taken every 1-2 ns for the whole trajectory. I recommend creating (either initially or after) mdcrd files with frames that are 1 ns apart, then if desired skip every second frame, e.g. for i in {1..10..2} ... . Finally, simply run each frame.com file; for example to sequentially run every every frame .com file (paste the following into a bash script and "nohup ./script &"),
 	
 	for i in {1..10}
 	do
