@@ -98,6 +98,8 @@ Amber14 Molecular Dynamics package
 
 QChem Quantum Chemistry package, version 4.3
 
+Gaussian09 Quantum Chemistry package
+
 Visual Molecular Dynamics (VMD)
 
 ## To Do
