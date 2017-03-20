@@ -84,7 +84,7 @@ In general, a snapshot should be taken every 1-2 ns for the whole trajectory. I 
 	nohup g09 frame$i.com &
 	done	
 
-The script grep_s1_energies.sh extracts the S1 energies from folders log files frame{0..1000..10}.log in the folders 01..20 (edit the script according to your folders/files),
+The script grep_s1_energies.sh extracts the S1 energies from the log files frame{0..1000..10}.log contained within the folders 01..20 (write/edit the script according to your folders/files),
 
 	./grep_s1_energies.sh 
 
