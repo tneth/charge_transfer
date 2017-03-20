@@ -4,19 +4,19 @@
 
 To start off the following files can be used to generate the Amber parameter file and starting MD geometry "restart file":
 
--host.mol2	(host mol2 file, contains geometry and charges)
--guest.mol2	(guest mol2 file, containes geometry and charges)
--leap.src	(configuration file to edit the host and guest, size of box and other parameters)
--gaff.dat	(General Amber Force Field file)
+- host.mol2	(host mol2 file, contains geometry and charges)
+- guest.mol2	(guest mol2 file, containes geometry and charges)
+- leap.src	(configuration file to edit the host and guest, size of box and other parameters)
+- gaff.dat	(General Amber Force Field file)
 
 The Amber parameter file and restart file:
 
--file.prmtop
--file.rst7
+- file.prmtop
+- file.rst7
 
 To create a new parameter file for the charge transfer state:
 
--replace_amber-charges.sh
+- replace_amber-charges.sh
 
 ## Usage
 
