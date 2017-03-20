@@ -20,11 +20,11 @@ fname = open('host.charges','w')
 for ts in universe.trajectory:
    c += 1  # count
    if c == frame_number:  
-      # write xyz file with residues 8.0 Angstroms away from resname xyz
-      universe.selectAtoms("byres (around 8.0 resname xyz)").write("host.xyz")
-      charges = universe.selectAtoms("byres (around 8.0 resname xyz)").charges
+      # write host.xyz file using residues 8.0 Angstroms away from resnum 1 (the guest)
+      universe.selectAtoms("byres (around 8.0 resnum 1)").write("host.xyz")
+      charges = universe.selectAtoms("byres (around 8.0 resnum 1)").charges
       for item in charges:
          fname.write("%s\n" % item) 
-      universe.selectAtoms("byres (resname xyz)").write("guest.xyz")
+      universe.selectAtoms("byres (resnum 1)").write("guest.xyz")
 
 fname.close()
